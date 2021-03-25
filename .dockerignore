@@ -1,6 +1,6 @@
 .gitignore
 .DS_Store
-docker/*
 README.md
 Makefile
 k8s-petclinic-db/*
+k8s-petclinic-db/*/*

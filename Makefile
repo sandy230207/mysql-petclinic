@@ -2,11 +2,14 @@ DB_NAME = "sandy230207/mysql-petclinic:v1"
 
 build:
 	docker build \
-		-f docker/Dockerfile \
+		-f Dockerfile \
 		-t $(DB_NAME) .
 
 push:
 	docker push $(DB_NAME)
+
+helm-install:
+	helm install . --generate-name 
 
 run:
 	docker run -d --rm \
