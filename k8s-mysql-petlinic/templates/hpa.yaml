@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "k8s-petlinic-db.fullname" . }}
+  name: {{ include "k8s-mysql-petclinic.fullname" . }}
   labels:
-    {{- include "k8s-petlinic-db.labels" . | nindent 4 }}
+    {{- include "k8s-mysql-petclinic.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "k8s-petlinic-db.fullname" . }}
+    name: {{ include "k8s-mysql-petclinic.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

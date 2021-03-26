@@ -5,8 +5,8 @@ ALTER DATABASE petclinic
   DEFAULT COLLATE utf8_general_ci;
 
 -- GRANT ALL PRIVILEGES ON petclinic.* TO 'pc'@'localhost' IDENTIFIED BY 'petclinic';
-CREATE USER 'pc'@'localhost' IDENTIFIED BY 'petclinic';
-GRANT ALL PRIVILEGES ON petclinic.* TO 'pc'@'localhost';
+CREATE USER 'pc'@'%' IDENTIFIED BY 'petclinic';
+GRANT ALL PRIVILEGES ON petclinic.* TO 'pc'@'%';
 FLUSH PRIVILEGES;
 
 USE petclinic;
