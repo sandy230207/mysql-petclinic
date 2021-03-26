@@ -36,6 +36,8 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+port: 3306
+
 service:
   type: NodePort
   port: 3306
