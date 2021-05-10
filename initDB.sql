@@ -71,6 +71,9 @@ CREATE TABLE IF NOT EXISTS users (
   username VARCHAR(20) NOT NULL ,
   password VARCHAR(20) NOT NULL ,
   enabled TINYINT NOT NULL DEFAULT 1 ,
+  uid INT(4) UNSIGNED NOT NULL,
+  -- FOREIGN KEY (uid) REFERENCES owners(id),
+  -- FOREIGN KEY (uid) REFERENCES vets(id),
   PRIMARY KEY (username)
 ) engine=InnoDB;
 

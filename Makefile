@@ -18,4 +18,5 @@ run:
 		-p 3306:3306 \
 		-e MYSQL_ROOT_PASSWORD=petclinic \
 		-e MYSQL_DATABASE=petclinic \
+		-v "/Users/sandy/git-repo/mysql-petlinic/volumes/mysql":"/var/lib/mysql" \
 		$(DB_NAME)

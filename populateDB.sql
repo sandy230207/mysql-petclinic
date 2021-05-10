@@ -51,8 +51,9 @@ INSERT IGNORE INTO visits VALUES (1, 7, '2010-03-04', 'rabies shot');
 INSERT IGNORE INTO visits VALUES (2, 8, '2011-03-04', 'rabies shot');
 INSERT IGNORE INTO visits VALUES (3, 8, '2009-06-04', 'neutered');
 INSERT IGNORE INTO visits VALUES (4, 7, '2008-09-04', 'spayed');
+INSERT IGNORE INTO visits VALUES (5, 1, '2008-09-04', 'sick');
 
-INSERT IGNORE INTO users(username,password,enabled) VALUES ('admin','{noop}admin', true);
+INSERT IGNORE INTO users(username,password,enabled,uid) VALUES ('admin','{noop}admin', true, 1);
 
 INSERT IGNORE INTO roles (username, role) VALUES ('admin', 'ROLE_OWNER_ADMIN');
 INSERT IGNORE INTO roles (username, role) VALUES ('admin', 'ROLE_VET_ADMIN');
