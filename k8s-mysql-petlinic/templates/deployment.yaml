@@ -51,7 +51,21 @@ spec:
           {{- range .Values.env }}
           - name: {{ .name }}
             value: {{ .value }}
-          {{- end}}
+          {{- end }}
+          volumeMounts:
+          - mountPath: {{ .Values.volume.mountPath }}
+            name: {{ .Values.volume.name }}
+      volumes:
+      - name: {{ .Values.volume.name }}
+        # This AWS EBS volume must already exist.
+        # awsElasticBlockStore:
+        #   volumeID: "<volume id>"
+        #   fsType: ext4
+        hostPath:
+          # directory location on host
+          path: {{ .Values.volume.hostPath }}
+          # this field is optional
+          type: DirectoryOrCreate
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

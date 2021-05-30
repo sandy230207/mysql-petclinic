@@ -80,6 +80,11 @@ tolerations: []
 
 affinity: {}
 
+volume:
+  name: mysql-volume
+  mountPath: /var/lib/mysql
+  hostPath: /Users/sandy/git-repo/mysql-petlinic/volumes/mysql
+
 env:
   - name: MYSQL_ROOT_PASSWORD
     value: petclinic
