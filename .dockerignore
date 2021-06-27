@@ -2,7 +2,9 @@
 .DS_Store
 README.md
 Makefile
+k8s-mysql-petlinic/
 k8s-mysql-petlinic/*
 k8s-mysql-petlinic/*/*
+volumes/
 volumes/*
 volumes/*/*
