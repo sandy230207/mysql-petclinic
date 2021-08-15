@@ -1,9 +1,9 @@
-INSERT IGNORE INTO vets VALUES (1, '欣怡', '簡');
-INSERT IGNORE INTO vets VALUES (2, '佑凱', '林');
-INSERT IGNORE INTO vets VALUES (3, '文吟', '劉');
-INSERT IGNORE INTO vets VALUES (4, '志文', '黃');
-INSERT IGNORE INTO vets VALUES (5, '冠宏', '張');
-INSERT IGNORE INTO vets VALUES (6, '黛', '李');
+INSERT IGNORE INTO vets VALUES (1, '欣怡', '簡', '0947592759');
+INSERT IGNORE INTO vets VALUES (2, '佑凱', '林', '0937569264');
+INSERT IGNORE INTO vets VALUES (3, '文吟', '劉', '0936592752');
+INSERT IGNORE INTO vets VALUES (4, '志文', '黃', '0932793629');
+INSERT IGNORE INTO vets VALUES (5, '冠宏', '張', '0985937492');
+INSERT IGNORE INTO vets VALUES (6, '黛', '李', '09345872975');
 
 INSERT IGNORE INTO specialties VALUES (1, '放射科');
 INSERT IGNORE INTO specialties VALUES (2, '外科');

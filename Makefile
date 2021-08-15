@@ -1,4 +1,4 @@
-DB_NAME = "sandy230207/mysql-petclinic:v1"
+DB_NAME = "sandy230207/mysql-petclinic:v2"
 
 build:
 	docker build \
