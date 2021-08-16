@@ -6,9 +6,11 @@ replicaCount: 1
 
 image:
   repository: sandy230207/mysql-petclinic
+  # repository: a123453906/mysql-petclinic
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v2"
+  # tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""

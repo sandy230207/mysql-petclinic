@@ -1,4 +1,5 @@
 DB_NAME = "sandy230207/mysql-petclinic:v2"
+# DB_NAME = "a123453906/mysql-petclinic:latest"
 
 build:
 	docker build \
